@@ -1,0 +1,16 @@
+Chunk results
+=================================================================
+aime_chunk_00_05.log         Pass@8=1/5   Pass@1=0.0500
+aime_chunk_05_10.log         Pass@8=3/5   Pass@1=0.2250
+aime_chunk_10_15.log         Pass@8=2/5   Pass@1=0.1250
+aime_chunk_15_20.log         Pass@8=0/5   Pass@1=0.0000
+aime_chunk_20_25.log         Pass@8=1/5   Pass@1=0.0250
+aime_chunk_25_30.log         Pass@8=0/5   Pass@1=0.0000
+
+=================================================================
+AIME 2024 — Random-15K Full-SFT checkpoint-3500
+=================================================================
+Chunks found : 6
+Questions    : 30
+Pass@8 / Acc : 7/30 = 0.2333 (23.33%)
+Pass@1       : 2.125/30 = 0.0708 (7.08%)

@@ -1,0 +1,3 @@
+correct cnt / total cnt: 29/40
+Acc: 0.7250
+Pass@1: 14.5/40 = 0.3625

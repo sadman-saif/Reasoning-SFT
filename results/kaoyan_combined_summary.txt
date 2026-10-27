@@ -1,0 +1,31 @@
+Kaoyan — Random-15K Full-SFT checkpoint-3500
+======================================================================
+kaoyan_chunk_000_010.log         Pass@8=8/10 Pass@1=0.2250
+kaoyan_chunk_010_020.log         Pass@8=5/10 Pass@1=0.1750
+kaoyan_chunk_020_030.log         Pass@8=6/10 Pass@1=0.2750
+kaoyan_chunk_030_040.log         Pass@8=6/10 Pass@1=0.1250
+kaoyan_chunk_040_050.log         Pass@8=9/10 Pass@1=0.3750
+kaoyan_chunk_050_060.log         Pass@8=7/10 Pass@1=0.2750
+kaoyan_chunk_060_070.log         Pass@8=6/10 Pass@1=0.1750
+kaoyan_chunk_070_080.log         Pass@8=8/10 Pass@1=0.2000
+kaoyan_chunk_080_090.log         Pass@8=6/10 Pass@1=0.3500
+kaoyan_chunk_090_100.log         Pass@8=5/10 Pass@1=0.2375
+kaoyan_chunk_100_110.log         Pass@8=9/10 Pass@1=0.2750
+kaoyan_chunk_110_120.log         Pass@8=8/10 Pass@1=0.3500
+kaoyan_chunk_120_130.log         Pass@8=6/10 Pass@1=0.2500
+kaoyan_chunk_130_140.log         Pass@8=7/10 Pass@1=0.3625
+kaoyan_chunk_140_150.log         Pass@8=8/10 Pass@1=0.2375
+kaoyan_chunk_150_160.log         Pass@8=5/10 Pass@1=0.3375
+kaoyan_chunk_160_170.log         Pass@8=4/10 Pass@1=0.2125
+kaoyan_chunk_170_180.log         Pass@8=6/10 Pass@1=0.2625
+kaoyan_chunk_180_190.log         Pass@8=7/10 Pass@1=0.3000
+kaoyan_chunk_190_199.log         Pass@8=4/9 Pass@1=0.1250
+
+======================================================================
+Complete chunks  : 20
+Questions        : 199
+Samples/question : 8
+Total generations: 1592
+
+Pass@1       : 51.125/199 = 0.2569 (25.69%)
+Pass@8 / Acc : 130/199 = 0.6533 (65.33%)

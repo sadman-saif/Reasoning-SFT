@@ -1,0 +1,18 @@
+ARC evaluation protocol
+
+Model: Qwen2.5-3B-Instruct Random-15K Full-SFT checkpoint-3500
+Prompt type: qwen-instruct
+Temperature: 0.6
+Top-p: 0.95
+Samples per problem: 8
+Max generation tokens: 32768
+Seed: 0
+Inference engine: vLLM 0.6.1
+GPU memory utilization: 0.96 for chunked runs
+vLLM CPU swap space: 60 GB
+
+Metrics:
+Pass@1 = average correctness across sampled generations
+Pass@8 / Acc = fraction of problems with at least one correct response among 8 samples
+
+Long benchmarks were evaluated in chunks to reduce KV-cache pressure while preserving identical sampling parameters.

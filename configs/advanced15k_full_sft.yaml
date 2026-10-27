@@ -1,0 +1,89 @@
+model_name_or_path: Qwen/Qwen2.5-3B-Instruct
+
+
+
+stage: sft
+
+do_train: true
+
+finetuning_type: full
+
+
+
+deepspeed: examples/deepspeed/ds_z3_offload_config.json
+
+flash_attn: fa2
+
+
+
+dataset: acereason_advanced_15k
+
+template: qwen
+
+
+
+cutoff_len: 10000
+
+overwrite_cache: true
+
+preprocessing_num_workers: 4
+
+
+
+output_dir: saves/qwen25_3b_advanced15k_2ep_10k
+
+overwrite_output_dir: false
+
+
+
+logging_steps: 1
+
+
+
+save_strategy: steps
+
+save_steps: 100
+
+save_total_limit: 3
+
+
+
+plot_loss: true
+
+
+
+per_device_train_batch_size: 1
+
+gradient_accumulation_steps: 8
+
+
+
+learning_rate: 5.0e-6
+
+num_train_epochs: 2
+
+
+
+lr_scheduler_type: cosine
+
+warmup_ratio: 0.0
+
+
+
+bf16: true
+
+gradient_checkpointing: true
+
+
+
+seed: 42
+
+
+
+ddp_timeout: 180000000
+
+report_to: none
+
+
+
+resume_from_checkpoint: null

@@ -1,0 +1,77 @@
+
+# Model weights / checkpoints
+
+*.safetensors
+
+*.bin
+
+*.pt
+
+*.pth
+
+checkpoint-*/
+
+saves/
+
+
+
+# Large datasets hosted on Hugging Face
+
+acereason_random_15k.json
+
+acereason_advanced_15k.json
+
+
+
+# Python
+
+__pycache__/
+
+*.pyc
+
+*.pyo
+
+.venv/
+
+envs/
+
+
+
+# Caches
+
+.cache/
+
+huggingface/
+
+wandb/
+
+
+
+# Training outputs
+
+outputs/
+
+logs/
+
+
+
+# Archives
+
+*.zip
+
+*.tar
+
+*.tar.gz
+
+
+
+# OS/editor
+
+.DS_Store
+
+Thumbs.db
+
+.vscode/
+
+.idea/
+

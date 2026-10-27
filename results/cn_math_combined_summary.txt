@@ -1,0 +1,16 @@
+CN Math 2024 — Random-15K Full-SFT checkpoint-3500
+=================================================================
+cn_math_chunk_00_05.log          Pass@8=1/5 Pass@1=0.1000
+cn_math_chunk_05_10.log          Pass@8=1/5 Pass@1=0.0250
+cn_math_chunk_10_15.log          Pass@8=3/5 Pass@1=0.1500
+cn_math_chunk_15_20.log          Pass@8=3/5 Pass@1=0.1250
+cn_math_chunk_20_25.log          Pass@8=2/5 Pass@1=0.1250
+cn_math_chunk_25_30.log          Pass@8=4/5 Pass@1=0.2750
+
+Chunks found     : 6
+Questions        : 30
+Samples/question : 8
+Total generations: 240
+
+Pass@1       : 4/30 = 0.1333 (13.33%)
+Pass@8 / Acc : 14/30 = 0.4667 (46.67%)
