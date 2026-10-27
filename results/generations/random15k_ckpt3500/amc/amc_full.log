@@ -1,0 +1,80 @@
+current stop list: None
+Random seed set as 0
+current eval model: /scratch/sadmansaif/Project-Reasoning-SFT-LLM/LLaMA-Factory/saves/qwen25_3b_random15k/checkpoint-3500
+use n = 8, generation epoch is: 1
+available_gpus: ['0']
+  0%|          | 0/40 [00:00<?, ?it/s]100%|██████████| 40/40 [00:00<00:00, 1042.87it/s]
+<|im_start|>system
+Please reason step by step, and put your final answer within \boxed{}.<|im_end|>
+<|im_start|>user
+Cities $A$ and $B$ are $45$ miles apart. Alicia lives in $A$ and Beth lives in $B$. Alicia bikes towards $B$ at 18 miles per hour. Leaving at the same time, Beth bikes toward $A$ at 12 miles per hour. How many miles from City $A$ will they be when they meet?<|im_end|>
+<|im_start|>assistant
+
+INFO 10-23 12:43:52 llm_engine.py:232] Initializing an LLM engine (v0.6.1) with config: model='/scratch/sadmansaif/Project-Reasoning-SFT-LLM/LLaMA-Factory/saves/qwen25_3b_random15k/checkpoint-3500', speculative_config=None, tokenizer='/scratch/sadmansaif/Project-Reasoning-SFT-LLM/LLaMA-Factory/saves/qwen25_3b_random15k/checkpoint-3500', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/scratch/sadmansaif/Project-Reasoning-SFT-LLM/LLaMA-Factory/saves/qwen25_3b_random15k/checkpoint-3500, use_v2_block_manager=False, num_scheduler_steps=1, enable_prefix_caching=False, use_async_output_proc=True)
+INFO 10-23 12:43:54 model_runner.py:997] Starting to load model /scratch/sadmansaif/Project-Reasoning-SFT-LLM/LLaMA-Factory/saves/qwen25_3b_random15k/checkpoint-3500...
+Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.54it/s]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:00<00:00,  2.22it/s]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:00<00:00,  2.08it/s]
+
+INFO 10-23 12:43:55 model_runner.py:1008] Loading model weights took 5.7915 GB
+INFO 10-23 12:43:57 gpu_executor.py:122] # GPU blocks: 114107, # CPU blocks: 7281
+INFO 10-23 12:43:58 model_runner.py:1309] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 10-23 12:43:58 model_runner.py:1313] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 10-23 12:44:11 model_runner.py:1428] Graph capturing finished in 12 secs.
+Processed prompts:   0%|          | 0/40 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▎         | 1/40 [00:15<09:55, 15.28s/it, est. speed input: 6.94 toks/s, output: 188.08 toks/s]Processed prompts:   5%|▌         | 2/40 [00:18<05:16,  8.33s/it, est. speed input: 8.54 toks/s, output: 352.98 toks/s]Processed prompts:   8%|▊         | 3/40 [00:25<04:42,  7.64s/it, est. speed input: 10.64 toks/s, output: 426.12 toks/s]Processed prompts:  10%|█         | 4/40 [00:27<03:08,  5.23s/it, est. speed input: 11.81 toks/s, output: 604.72 toks/s]Processed prompts:  12%|█▎        | 5/40 [00:37<04:09,  7.13s/it, est. speed input: 11.83 toks/s, output: 617.94 toks/s]Processed prompts:  15%|█▌        | 6/40 [00:38<02:49,  4.99s/it, est. speed input: 13.56 toks/s, output: 692.41 toks/s]Processed prompts:  18%|█▊        | 7/40 [00:40<02:11,  3.99s/it, est. speed input: 15.98 toks/s, output: 776.21 toks/s]Processed prompts:  20%|██        | 8/40 [00:44<02:08,  4.02s/it, est. speed input: 15.99 toks/s, output: 893.53 toks/s]Processed prompts:  22%|██▎       | 9/40 [01:09<05:31, 10.69s/it, est. speed input: 11.12 toks/s, output: 707.47 toks/s]Processed prompts:  25%|██▌       | 10/40 [01:14<04:23,  8.78s/it, est. speed input: 11.52 toks/s, output: 791.89 toks/s]Processed prompts:  28%|██▊       | 11/40 [02:54<17:47, 36.81s/it, est. speed input: 5.54 toks/s, output: 448.77 toks/s] Processed prompts:  30%|███       | 12/40 [03:13<14:34, 31.24s/it, est. speed input: 5.52 toks/s, output: 515.23 toks/s]Processed prompts:  32%|███▎      | 13/40 [03:17<10:25, 23.17s/it, est. speed input: 5.83 toks/s, output: 579.17 toks/s]Processed prompts:  35%|███▌      | 14/40 [03:53<11:44, 27.09s/it, est. speed input: 5.85 toks/s, output: 574.64 toks/s]Processed prompts:  38%|███▊      | 15/40 [04:28<12:14, 29.37s/it, est. speed input: 5.48 toks/s, output: 561.05 toks/s]Processed prompts:  40%|████      | 16/40 [04:58<11:47, 29.49s/it, est. speed input: 5.42 toks/s, output: 579.67 toks/s]Processed prompts:  42%|████▎     | 17/40 [05:52<14:10, 36.98s/it, est. speed input: 5.10 toks/s, output: 598.06 toks/s]Processed prompts:  45%|████▌     | 18/40 [06:37<14:23, 39.25s/it, est. speed input: 4.92 toks/s, output: 574.55 toks/s]Processed prompts:  48%|████▊     | 19/40 [23:06<1:53:37, 324.63s/it, est. speed input: 1.58 toks/s, output: 230.23 toks/s]Processed prompts:  50%|█████     | 20/40 [23:11<1:16:13, 228.68s/it, est. speed input: 1.69 toks/s, output: 285.55 toks/s]Processed prompts:  52%|█████▎    | 21/40 [23:12<50:42, 160.13s/it, est. speed input: 1.80 toks/s, output: 410.45 toks/s]  Processed prompts:  57%|█████▊    | 23/40 [23:12<24:27, 86.34s/it, est. speed input: 2.02 toks/s, output: 467.95 toks/s] Processed prompts:  60%|██████    | 24/40 [23:13<17:21, 65.12s/it, est. speed input: 2.11 toks/s, output: 510.39 toks/s]Processed prompts:  62%|██████▎   | 25/40 [23:13<12:03, 48.21s/it, est. speed input: 2.19 toks/s, output: 568.42 toks/s]Processed prompts:  65%|██████▌   | 26/40 [23:14<08:12, 35.15s/it, est. speed input: 2.27 toks/s, output: 605.94 toks/s]Processed prompts:  68%|██████▊   | 27/40 [23:14<05:29, 25.36s/it, est. speed input: 2.35 toks/s, output: 666.99 toks/s]Processed prompts:  72%|███████▎  | 29/40 [23:14<02:35, 14.14s/it, est. speed input: 2.50 toks/s, output: 767.20 toks/s]Processed prompts:  75%|███████▌  | 30/40 [23:14<01:47, 10.76s/it, est. speed input: 2.57 toks/s, output: 839.44 toks/s]Processed prompts:  78%|███████▊  | 31/40 [23:14<01:12,  8.08s/it, est. speed input: 2.63 toks/s, output: 901.48 toks/s]Processed prompts:  80%|████████  | 32/40 [23:15<00:47,  5.99s/it, est. speed input: 2.69 toks/s, output: 951.35 toks/s]Processed prompts:  82%|████████▎ | 33/40 [23:15<00:30,  4.42s/it, est. speed input: 2.73 toks/s, output: 996.91 toks/s]Processed prompts:  85%|████████▌ | 34/40 [23:15<00:19,  3.20s/it, est. speed input: 2.78 toks/s, output: 1031.66 toks/s]Processed prompts:  92%|█████████▎| 37/40 [23:20<00:06,  2.27s/it, est. speed input: 3.03 toks/s, output: 1206.55 toks/s]Processed prompts:  95%|█████████▌| 38/40 [23:28<00:06,  3.46s/it, est. speed input: 3.09 toks/s, output: 1234.41 toks/s]Processed prompts:  98%|█████████▊| 39/40 [23:29<00:03,  3.02s/it, est. speed input: 3.15 toks/s, output: 1261.60 toks/s]Processed prompts: 100%|██████████| 40/40 [23:31<00:00,  2.66s/it, est. speed input: 3.19 toks/s, output: 1296.66 toks/s]Processed prompts: 100%|██████████| 40/40 [23:31<00:00, 35.28s/it, est. speed input: 3.19 toks/s, output: 1296.66 toks/s]
+llm generate done
+40
+check correct...:   0%|          | 0/40 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+check correct...:  22%|██▎       | 9/40 [00:01<00:04,  6.55it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+check correct...:  32%|███▎      | 13/40 [00:01<00:03,  8.00it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+check correct...:  35%|███▌      | 14/40 [00:02<00:04,  5.44it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+check correct...:  40%|████      | 16/40 [00:02<00:04,  5.65it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+check correct...:  65%|██████▌   | 26/40 [00:02<00:01, 11.53it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+check correct...:  70%|███████   | 28/40 [00:03<00:01, 10.21it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+check correct...:  75%|███████▌  | 30/40 [00:04<00:01,  5.89it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+check correct...:  95%|█████████▌| 38/40 [00:04<00:00,  9.49it/s]check correct...: 100%|██████████| 40/40 [00:04<00:00,  8.58it/s]
+writing generation to jsonl file...:   0%|          | 0/40 [00:00<?, ?it/s]writing generation to jsonl file...: 100%|██████████| 40/40 [00:00<00:00, 1266.87it/s]
+correct cnt / total cnt: 29/40
+Acc: 0.7250
+Pass@1: 14.5/40 = 0.3625
